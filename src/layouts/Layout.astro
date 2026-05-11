@@ -1,0 +1,199 @@
+---
+import '../styles/global.css';
+import CookieConsent from '../components/CookieConsent.astro';
+
+export interface Props {
+	title: string;
+	description?: string;
+	ogImage?: string;
+	ogUrl?: string;
+	ogType?: 'website' | 'product';
+	preloadImage?: string;
+	noindex?: boolean;
+}
+
+const {
+	title,
+	description,
+	ogImage = 'https://jamailfloors.com/images/Hardwood Flooring Houston Jamail Hardwoods.jpg',
+	ogType = 'website',
+	preloadImage,
+	noindex = false
+} = Astro.props;
+
+const SITE_URL = 'https://jamailfloors.com';
+const pathname = Astro.url.pathname === '/' ? '/' : Astro.url.pathname.replace(/\/?$/, '/');
+const canonicalUrl = Astro.props.ogUrl ?? new URL(pathname, SITE_URL).toString();
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{title}</title>
+
+  {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" imagesizes="(min-width:1024px) 50vw, 100vw">}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600;700&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600;700&display=swap">
+  </noscript>
+
+  <meta name="theme-color" content="#FAF7F2">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <link rel="manifest" href="/site.webmanifest">
+
+  {description && <meta name="description" content={description}>}
+  <link rel="canonical" href={canonicalUrl}>
+  {noindex && <meta name="robots" content="noindex,nofollow">}
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content={ogType}>
+  <meta property="og:site_name" content="Jamail Hardwoods">
+  <meta property="og:title" content={title}>
+  {description && <meta property="og:description" content={description}>}
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  {description && <meta name="twitter:description" content={description}>}
+  <meta name="twitter:image" content={ogImage}>
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://jamailfloors.com/#org",
+    "name": "Jamail Hardwoods",
+    "url": "https://jamailfloors.com/",
+    "logo": "https://jamailfloors.com/images/jamail-logo-hardwoods-transparent-logo.webp",
+    "sameAs": [
+      "https://www.google.com/maps/place/Jamail+Hardwoods"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "+1-832-930-5936",
+      "contactType": "customer service",
+      "areaServed": "US-TX",
+      "availableLanguage": ["English","Spanish"]
+    }]
+  })}></script>
+
+  <!-- JSON-LD: LocalBusiness -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://jamailfloors.com/#local",
+    "name": "Jamail Hardwoods",
+    "image": "https://jamailfloors.com/images/showroom jamail hardwoods houston texas.JPEG",
+    "url": "https://jamailfloors.com/",
+    "telephone": "+1-832-930-5936",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2643 Colquitt St",
+      "addressLocality": "Houston",
+      "addressRegion": "TX",
+      "postalCode": "77098",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 29.7384923,
+      "longitude": -95.4195166
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "16:00"
+      }
+    ],
+    "areaServed": ["Houston", "The Woodlands", "Sugar Land", "Katy", "Pearland", "League City"]
+  })}></script>
+
+  <!-- JSON-LD: Website -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "@id":"https://jamailfloors.com/#website",
+    "url":"https://jamailfloors.com/",
+    "name":"Jamail Hardwoods",
+    "publisher":{"@id":"https://jamailfloors.com/#org"},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://jamailfloors.com/products?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  })}></script>
+</head>
+
+<body class="bg-brand-ivory text-brand-ink font-body">
+  <!-- Optional subtle paper grain overlay -->
+  <div class="pointer-events-none fixed inset-0 opacity-[0.06] mix-blend-multiply"
+       style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.7%22 numOctaves=%222%22 stitchTiles=%22stitch%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.25%22/></svg>'); background-size:400px 400px;"></div>
+
+  <slot />
+
+  <!-- Cookie Consent Banner -->
+  <CookieConsent />
+
+  <!-- Global client-side initialization -->
+  <script>
+    import {
+      initRevealOnScroll,
+      initMobileMenu,
+      initFAQ,
+      initBestsellersCarousel,
+      initSamplesModal,
+      initFlooringCalculator,
+      initMobileNavigation,
+      initCookieConsent
+    } from '../scripts/main';
+    import { initProductCatalog } from '../scripts/products';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initRevealOnScroll();
+      initMobileMenu();
+      initFAQ();
+      initBestsellersCarousel();
+      initSamplesModal();
+      initFlooringCalculator();
+      initMobileNavigation();
+      initCookieConsent();
+
+      if (document.getElementById('product-grid')) {
+        initProductCatalog();
+      }
+    });
+  </script>
+
+  <!-- Chat widget loaded after page is interactive -->
+  <script>
+    window.addEventListener('load', () => {
+      const s = document.createElement('script');
+      s.src = 'https://xzmkcvztboyjdgxjofft.supabase.co/functions/v1/chat-widget?embed=js';
+      s.defer = true;
+      document.body.appendChild(s);
+    });
+  </script>
+
+</body>
+</html>

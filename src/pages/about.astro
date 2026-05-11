@@ -1,0 +1,214 @@
+---
+// about.astro - About page
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="About Jamail Hardwoods | Our Story, Craft, and Values"
+  description="Meet Jamail Hardwoods, a Houston flooring studio specializing in European white oak, low-VOC finishes, clean installation, and design-led service."
+>
+  <Header />
+
+
+  <!-- Intro (Who We Are) -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center pt-8 md:pt-14 pb-10 md:pb-16 px-4">
+      <div class="reveal mb-8 md:mb-0">
+        <p class="uppercase tracking-wide text-xs text-brand-ink/60">About Us</p>
+        <h1 class="font-heading text-4xl md:text-5xl leading-tight mt-2">Who We Are</h1>
+        <p class="mt-4 text-brand-ink/80">
+          Jamail Hardwoods is a family-run studio in Houston focused on European white oak flooring and wall applications.
+          We believe materials should feel honest, age beautifully, and make homes calmer and healthier to live in.
+        </p>
+        <p class="mt-3 text-brand-ink/80">
+          Our team blends design sensibility with technical execution—curated sourcing, low-VOC systems, dust control,
+          and a respectful install process you can live through.
+        </p>
+      </div>
+      <div class="reveal">
+        <video
+          src="/images/Team Pictures/Jamail-Showroom-video.mp4"
+          poster="/images/showroom jamail hardwoods houston texas.JPEG"
+          class="aspect-[4/3] w-full h-full object-cover rounded-3xl shadow-glass"
+          controls
+          preload="none"
+          playsinline
+          muted
+          loop
+          width="800"
+          height="600"
+          aria-label="Jamail Hardwoods Houston showroom walkthrough">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our History (Timeline) -->
+  <section class="container mx-auto py-12">
+  <h2 class="font-heading text-3xl mb-6 px-4">Our History</h2>
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4">
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <h3 class="font-semibold">Early Roots</h3>
+        <p class="mt-2 text-sm text-brand-ink/70">
+          We began as a small family outfit helping friends source better wood—with consistent tones and dependable milling—
+          for remodels across Houston.
+        </p>
+      </article>
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <h3 class="font-semibold">Curated European Supply</h3>
+        <p class="mt-2 text-sm text-brand-ink/70">
+          Partnering with select European mills, we refined a palette of finishes that read modern yet natural,
+          prioritizing healthy indoor air.
+        </p>
+      </article>
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <h3 class="font-semibold">Design-Led Practice</h3>
+        <p class="mt-2 text-sm text-brand-ink/70">
+          Today, we’re a designer-led team delivering cohesive rooms—flooring and walls installed with clean, quiet, on-time execution.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- What We Stand For (Values) -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="font-heading text-3xl mb-8">What We Stand For</h2>
+      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="reveal rounded-2xl bg-brand-sand/50 p-6 shadow-soft">
+          <h3 class="font-semibold">Honest Materials</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">European white oak selected for consistent grain, tone, and long-term stability.</p>
+        </article>
+        <article class="reveal rounded-2xl bg-brand-sand/50 p-6 shadow-soft">
+          <h3 class="font-semibold">Healthy Homes</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">Low-VOC finishes and dust containment so families can live through installs.</p>
+        </article>
+        <article class="reveal rounded-2xl bg-brand-sand/50 p-6 shadow-soft">
+          <h3 class="font-semibold">Craft Without Drama</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">Moisture testing, acclimation, and clean job sites. Predictable timelines.</p>
+        </article>
+        <article class="reveal rounded-2xl bg-brand-sand/50 p-6 shadow-soft">
+          <h3 class="font-semibold">Design First</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">Palettes that work with your architecture, light, and furnishings—now and later.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craft & Approach -->
+  <section class="container mx-auto py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div class="reveal px-4">
+      <img src="/images/Hardwood Flooring Houston Jamail Hardwoods.jpg"
+           alt="Detail of oak texture and finish"
+           class="w-full aspect-[4/3] md:aspect-video object-cover rounded-2xl sm:rounded-3xl shadow-glass">
+    </div>
+    <div class="reveal px-4">
+      <h2 class="font-heading text-2xl sm:text-3xl">Our Craft</h2>
+      <p class="mt-3 text-sm sm:text-base text-brand-ink/80">
+        We treat every project like a study in proportion: plank width to room scale, color temperature to natural light,
+        sheen to foot-traffic. The goal is a floor—and walls—that quietly elevate everything around them.
+      </p>
+      <ul class="mt-4 space-y-2 text-sm sm:text-base text-brand-ink/80">
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span>Wide-plank European oak with precision milling</span></li>
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span>Low-VOC oils and matte UV systems</span></li>
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span>Cladding and moss for acoustic warmth and texture</span></li>
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span>Clean, respectful install process</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sustainability & Community -->
+  <section class="bg-white py-16">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start px-4">
+      <div class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+        <h2 class="font-heading text-2xl">Sustainability</h2>
+        <p class="mt-2 text-brand-ink/80">
+          Responsible forestry, durable products, and healthy finishes. We believe the most sustainable
+          materials are those you keep for decades.
+        </p>
+      </div>
+      <div class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+        <h2 class="font-heading text-2xl">Community</h2>
+        <p class="mt-2 text-brand-ink/80">
+          We’re Houston locals. We collaborate with nearby builders, designers, and homeowners—and support
+          neighborhood initiatives that make our city better to live in.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="container mx-auto py-16">
+    <h2 class="font-heading text-3xl mb-8 px-4">Our Team</h2>
+    <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 px-4">
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft text-center">
+        <img src="/images/Team Pictures/Aly.jpg" alt="Aly Champagne" class="mx-auto h-28 w-28 rounded-full object-cover shadow-soft">
+        <h3 class="mt-4 font-semibold">Aly Champagne</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">Architectural Hardwood Consultant</p>
+        <a href="tel:+18329305936" class="mt-2 block text-sm text-brand-ink/80 hover:text-brand-brass transition">+1 (832) 930-5936</a>
+        <a href="https://www.linkedin.com/in/aly-champagne-101a8349/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center rounded-xl border border-brand-ink/15 px-3 py-1.5 text-xs font-medium text-brand-ink/80 hover:bg-brand-sand/40 transition">LinkedIn</a>
+      </article>
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft text-center">
+        <img src="/images/Team Pictures/Joey Owner.jpg" alt="Founder" class="mx-auto h-28 w-28 rounded-full object-cover shadow-soft">
+        <h3 class="mt-4 font-semibold">Joey — Founder</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">Sourcing, scheduling, and quality control from quote to walkthrough.</p>
+        <a href="https://www.linkedin.com/in/joey-jamal/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center rounded-xl border border-brand-ink/15 px-3 py-1.5 text-xs font-medium text-brand-ink/80 hover:bg-brand-sand/40 transition">LinkedIn</a>
+      </article>
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft text-center">
+        <img src="/images/Team Pictures/Samin.jpg" alt="B2B Sales Consultant" class="mx-auto h-28 w-28 rounded-full object-cover shadow-soft">
+        <h3 class="mt-4 font-semibold">Samin — B2B Sales Consultant</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">Building strong partnerships, guiding clients, and ensuring seamless project coordination.</p>
+        <a href="tel:+18329305936" class="mt-2 block text-sm text-brand-ink/80 hover:text-brand-brass transition">+1 (832) 930-5936</a>
+        <a href="https://www.linkedin.com/in/samin-seifpour-615248363/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center rounded-xl border border-brand-ink/15 px-3 py-1.5 text-xs font-medium text-brand-ink/80 hover:bg-brand-sand/40 transition">LinkedIn</a>
+      </article>
+      <article class="reveal rounded-2xl bg-white p-6 shadow-soft text-center">
+        <img src="/images/Team Pictures/Patrick McNeill.jpg" alt="Patrick McNeill" class="mx-auto h-28 w-28 rounded-full object-cover shadow-soft">
+        <h3 class="mt-4 font-semibold">Patrick McNeill</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">Builder Director at Jamail Hardwoods</p>
+        <a href="tel:+18329305936" class="mt-2 block text-sm text-brand-ink/80 hover:text-brand-brass transition">+1 (832) 930-5936</a>
+        <a href="https://www.linkedin.com/in/patrick-mcneill-181bab39a/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center justify-center rounded-xl border border-brand-ink/15 px-3 py-1.5 text-xs font-medium text-brand-ink/80 hover:bg-brand-sand/40 transition">LinkedIn</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Light-touch Contact -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="font-heading text-3xl">Visit Our Showroom</h2>
+      <p class="mt-2 text-brand-ink/80">See full planks, compare finishes, and talk with a designer. We serve Greater Houston.</p>
+      <div class="mt-5">
+        <a href="/contact" 
+           class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-6 py-3 text-white shadow-soft hover:opacity-90 transition">
+          Schedule a Visit
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumbs JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jamailfloors.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About",
+        "item": "https://jamailfloors.com/about"
+      }
+    ]
+  })}></script>
+
+  <Footer />
+</Layout>
+

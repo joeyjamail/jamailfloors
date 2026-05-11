@@ -1,0 +1,276 @@
+---
+// faq.astro - FAQ page
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Frequently Asked Questions | Jamail Hardwoods Houston"
+  description="Answers about European white oak flooring, Houston installation, pricing, maintenance, samples, warranties, and care from Jamail Hardwoods."
+>
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-linear-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto px-4 sm:px-6 pt-16 pb-14 text-center">
+      <div class="reveal max-w-3xl mx-auto">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight">Frequently Asked Questions</h1>
+        <p class="mt-4 text-brand-ink/80 leading-relaxed">
+          Get expert answers to common questions about European White Oak flooring, installation, maintenance, and our process. 
+          Can't find what you're looking for? We're here to help.
+        </p>
+        <div class="mt-6">
+          <a href="/contact"
+             class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-5 py-3 text-white shadow-soft hover:opacity-90 transition">
+            Ask a Question
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Categories -->
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="grid lg:grid-cols-2 gap-8">
+      
+      <!-- Product & Materials -->
+      <div>
+        <h2 class="font-heading text-2xl mb-6">Product & Materials</h2>
+        <div class="space-y-4">
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              What makes European White Oak different from domestic oak?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">European White Oak is denser, more stable, and has a tighter grain pattern than American oak. It's also more resistant to moisture and wear, making it ideal for Houston's climate. The finishing process creates deeper, more consistent color penetration.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              How wide are your planks?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Our European White Oak planks are typically 7-9 inches wide, which creates a more spacious, contemporary look while maintaining the classic appeal of hardwood flooring. We also offer custom widths for specific design requirements.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              Are your floors pre-finished or site-finished?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">We offer both options. Pre-finished floors provide immediate use and consistent factory finishing, while site-finished floors allow for custom stain colors and a seamless appearance. We'll help you choose based on your timeline and design goals.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              How do I choose the right color and finish?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">We recommend starting with our free sample box to see how different tones look in your specific lighting. Our design team can also provide guidance based on your existing decor, room size, and personal preferences.</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Installation & Process -->
+      <div>
+        <h2 class="font-heading text-2xl mb-6">Installation & Process</h2>
+        <div class="space-y-4">
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              How long does installation take?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Most residential installations take 2-4 days, depending on square footage and complexity. We provide detailed timelines during consultation and stick to our schedules. Material acclimation adds 3-5 days before installation begins.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              Do I need to move out during installation?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">No, our dust-controlled installation process keeps other areas of your home clean and livable. We'll work with you to minimize disruption and maintain access to essential areas throughout the project.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              What about my existing flooring?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">We handle removal and disposal of existing flooring as part of our service. We'll assess your current flooring during consultation and include removal costs in your quote if needed.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              What kind of subfloor preparation is required?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">We perform moisture testing, levelness checks, and any necessary repairs to ensure your subfloor is perfect. This foundation work is critical for a long-lasting, quiet floor that performs beautifully for decades.</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Pricing & Investment -->
+      <div>
+        <h2 class="font-heading text-2xl mb-6">Pricing & Investment</h2>
+        <div class="space-y-4">
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              How much does European White Oak flooring cost?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Investment varies based on grade, finish, and installation complexity. We provide detailed, itemized quotes with no hidden fees. Our goal is to help you get the best value for your specific project and budget.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              Do you offer financing options?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Yes, we work with financing partners to offer flexible payment options for qualified buyers. We can discuss these options during your consultation to find a solution that works for your budget.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              What's included in your installation price?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Our installation includes subfloor preparation, dust containment, professional installation, cleanup, and final walkthrough. Material costs, removal of existing flooring, and any structural repairs are quoted separately for transparency.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              Do you provide warranties?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Yes, we provide comprehensive warranties on both materials and installation workmanship. Warranty terms vary by product, and we'll explain all coverage details during your consultation.</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Maintenance & Care -->
+      <div>
+        <h2 class="font-heading text-2xl mb-6">Maintenance & Care</h2>
+        <div class="space-y-4">
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              How do I maintain my European White Oak floors?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Regular sweeping or vacuuming, prompt cleanup of spills, and occasional damp mopping with hardwood-specific cleaners will keep your floors beautiful. We provide detailed care instructions and product recommendations after installation.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              How often do floors need refinishing?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">With proper care, European White Oak floors can go 10-15 years or more before needing refinishing. The exact timeline depends on foot traffic, maintenance, and finish type. Pre-finished floors may last even longer.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              Are hardwood floors good for Houston's climate?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">Yes, European White Oak is particularly well-suited to Houston's humidity. Proper acclimation, installation, and maintaining consistent indoor humidity (30-50%) will ensure your floors perform beautifully year-round.</p>
+          </details>
+
+          <details class="group rounded-2xl bg-white p-4 shadow-soft">
+            <summary class="cursor-pointer font-medium text-brand-ink hover:text-brand-brass transition">
+              What if I have pets or children?
+            </summary>
+            <p class="mt-3 text-sm text-brand-ink/70">European White Oak is durable enough for active families. We can recommend finishes with enhanced scratch resistance and provide tips for protecting high-traffic areas. Many of our clients have pets and children and love their floors.</p>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <section id="calculator" class="bg-white py-16 lg:rounded-none mt-8 ">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h2 class="font-heading text-3xl">How Much Flooring Do I Need?</h2>
+      <p class="mt-2 text-brand-ink/80">Use our calculator to estimate the number of boxes for your project. We automatically include a 10% waste factor for cuts and mistakes.</p>
+      
+      <div class="mt-8 rounded-2xl bg-brand-sand/40 p-6 shadow-soft text-left">
+        <form id="flooring-calculator-form" class="grid sm:grid-cols-2 gap-4 items-end">
+          <label class="block">
+            <span class="text-sm font-medium">Total Project Area (sq ft)</span>
+            <input type="number" id="total-sqft" required class="mt-1 w-full rounded-xl border border-black/10 bg-white px-3 py-2 outline-none focus:ring-2 focus:ring-brand-oak" placeholder="e.g., 1500">
+          </label>
+          <label class="block">
+            <span class="text-sm font-medium">Square Feet per Box</span>
+            <input type="number" id="sqft-per-box" value="23.31" required class="mt-1 w-full rounded-xl border border-black/10 bg-white px-3 py-2 outline-none focus:ring-2 focus:ring-brand-oak">
+          </label>
+          <div class="sm:col-span-2 text-center">
+            <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center rounded-2xl bg-brand-brass px-6 py-3 text-white shadow-soft hover:opacity-90 transition">
+              Calculate Boxes
+            </button>
+          </div>
+        </form>
+        <div id="calculator-result" class="mt-6 text-center hidden">
+          <p class="text-brand-ink/80">You will need approximately:</p>
+          <p class="font-heading text-4xl text-brand-brass my-2">
+            <span id="boxes-needed">0</span> boxes
+          </p>
+          <p class="text-xs text-brand-ink/60">
+            This estimate includes a 10% waste factor. We recommend verifying with your installer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Still Have Questions -->
+  <section class="bg-white py-16">
+    <div class="container mx-auto px-4 sm:px-6 text-center">
+      <div class="reveal max-w-2xl mx-auto">
+        <h2 class="font-heading text-2xl sm:text-3xl">Still Have Questions?</h2>
+        <p class="mt-2 text-brand-ink/80 leading-relaxed">
+          Our flooring experts are here to help. Schedule a consultation or visit our Houston showroom to get personalized answers for your specific project.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <a href="/contact"
+             class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-5 py-3 text-white shadow-soft hover:opacity-90 transition">
+            Contact Us
+          </a>
+          <a href="https://jamail-hardwoods-leads.vercel.app/booking"
+             class="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition"
+             target="_blank" rel="nofollow noopener noreferrer">
+            Schedule Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Schema JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes European White Oak different from domestic oak?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "European White Oak is denser, more stable, and has a tighter grain pattern than American oak. It's also more resistant to moisture and wear, making it ideal for Houston's climate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does installation take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most residential installations take 2-4 days, depending on square footage and complexity. Material acclimation adds 3-5 days before installation begins."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does European White Oak flooring cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Investment varies based on grade, finish, and installation complexity. We provide detailed, itemized quotes with no hidden fees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I maintain my European White Oak floors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Regular sweeping or vacuuming, prompt cleanup of spills, and occasional damp mopping with hardwood-specific cleaners will keep your floors beautiful."
+        }
+      }
+    ]
+  })}></script>
+
+  <Footer />
+</Layout>
+

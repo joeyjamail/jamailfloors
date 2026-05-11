@@ -1,0 +1,155 @@
+---
+// services.astro - Services page
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Hardwood Flooring Services Houston | Jamail Hardwoods"
+  description="Houston hardwood flooring services including installation, subfloor prep, moisture testing, product selection, and full-service interior design."
+>
+  <Header />
+
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto px-4 sm:px-6 pt-16 pb-14 grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight">End-to-End Hardwood Flooring Services</h1>
+        <p class="mt-4 text-brand-ink/80 leading-relaxed">
+          From consultation to cleanup, we handle every aspect of your hardwood flooring project. Our proven process ensures a stress-free experience and a flawless finish that will enhance your home for decades.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://jamail-hardwoods-leads.vercel.app/booking"
+             class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-5 py-3 text-white shadow-soft hover:opacity-90 transition"
+             target="_blank" rel="nofollow noopener noreferrer">
+            Book Free Consultation
+          </a>
+          <a href="#our-process"
+             class="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition">
+            See Our Process
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="/images/Custom-hardwood-floor-installation.webp" 
+             alt="Professional hardwood flooring installation in Houston home"
+             class="aspect-[4/3] w-full h-full object-cover rounded-3xl shadow-glass">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+<section class="bg-white py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-heading text-2xl sm:text-3xl">What We Do</h2>
+        <p class="mt-2 text-brand-ink/80 leading-relaxed">We offer a complete suite of services to ensure your flooring project is a success from start to finish.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <article class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">1. Design & Showroom Consultation</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">Visit our Houston showroom to see full-size planks and get expert advice on tones, textures, and finishes that match your home's architecture and lighting.</p>
+        </article>
+
+        <article class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">2. Subfloor Preparation & Leveling</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">A perfect floor starts with a perfect foundation. We handle all necessary subfloor repairs, leveling, and cleaning to ensure a flawless and durable installation.</p>
+        </article>
+
+        <article class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">3. Moisture Testing & Acclimation</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">We perform rigorous moisture testing and ensure every plank is properly acclimated to your home's environment, preventing future gapping or cupping.</p>
+        </article>
+
+        <article class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">4. Professional Hardwood Installation</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">Our certified installers use precision techniques for a seamless fit. We manage dust control and job site cleanliness, respecting your home at every step.</p>
+        </article>
+
+        <article class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">5. Finishing & Custom Stains</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">From durable, low-VOC factory finishes to custom on-site staining, we deliver the exact look and protection your project requires.</p>
+        </article>
+
+        <article class="reveal rounded-2xl bg-brand-sand/40 p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">6. Full-Service Interior Design</h3>
+          <p class="mt-2 text-sm text-brand-ink/70">Beyond flooring, we offer comprehensive interior design services, creating cohesive spaces that reflect your style from the ground up.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process Section -->
+  <section id="our-process" class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="font-heading text-2xl sm:text-3xl">Our Proven Process for Perfect Floors</h2>
+      <p class="mt-2 text-brand-ink/80 leading-relaxed">We've refined our process to be simple, transparent, and predictable, delivering designer-grade results without the drama.</p>
+    </div>
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <div class="font-heading text-brand-brass text-2xl">01</div>
+        <h3 class="font-semibold mt-2">Consultation & Selection</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">We start by understanding your vision, timeline, and budget. You'll get a free sample box and a clear, itemized quote.</p>
+      </div>
+      <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <div class="font-heading text-brand-brass text-2xl">02</div>
+        <h3 class="font-semibold mt-2">Preparation & Planning</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">We schedule everything in advance, prep your subfloor, and coordinate material delivery for a smooth installation.</p>
+      </div>
+      <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <div class="font-heading text-brand-brass text-2xl">03</div>
+        <h3 class="font-semibold mt-2">Installation & Quality Control</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">Our certified team installs your floor with precision while maintaining a clean, organized work environment.</p>
+      </div>
+      <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+        <div class="font-heading text-brand-brass text-2xl">04</div>
+        <h3 class="font-semibold mt-2">Final Walkthrough & Care</h3>
+        <p class="mt-1 text-sm text-brand-ink/70">We conduct a thorough walkthrough, provide care instructions, and ensure you're completely satisfied.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="reveal rounded-3xl bg-brand-moss p-6 sm:p-8 md:p-12 text-center text-white shadow-soft">
+      <h2 class="font-heading text-2xl sm:text-3xl">Ready for a Flawless Floor?</h2>
+      <p class="mt-2 mx-auto max-w-2xl opacity-90 leading-relaxed">Let's talk about your project. Schedule a free, no-obligation consultation with a flooring specialist today.</p>
+      <div class="mt-6">
+        <a href="https://jamail-hardwoods-leads.vercel.app/booking"
+           class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-brand-coal shadow-soft hover:opacity-90 transition"
+           target="_blank" rel="nofollow noopener noreferrer">
+          Book Free Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumbs JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://jamailfloors.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://jamailfloors.com/services"
+      }
+    ]
+  })}></script>
+
+  <Footer />
+</Layout>
+
+

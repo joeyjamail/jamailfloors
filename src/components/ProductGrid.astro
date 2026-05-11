@@ -1,0 +1,99 @@
+---
+// Example of a TypeScript-enabled Astro component
+
+interface Props {
+  products?: Array<{
+    id: string;
+    name: string;
+    image: string;
+    price: number;
+    featured?: boolean;
+  }>;
+  title?: string;
+}
+
+const { 
+  products = [], 
+  title = "Featured Products" 
+} = Astro.props;
+
+// Server-side TypeScript logic
+const featuredProducts = products.filter(product => product.featured);
+const displayProducts = featuredProducts.length > 0 ? featuredProducts : products.slice(0, 4);
+---
+
+<section class="py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="font-heading text-3xl mb-8">{title}</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {displayProducts.map(product => (
+        <div class="product-card reveal rounded-2xl bg-white p-4 shadow-soft hover:shadow-glass transition-all duration-300" data-product-id={product.id}>
+          <img src={product.image} alt={product.name} class="w-full aspect-square object-cover rounded-xl mb-4" loading="lazy" />
+          <h3 class="font-semibold text-lg mb-2">{product.name}</h3>
+          <p class="text-brand-brass font-bold">${product.price}</p>
+          <button class="add-to-cart-btn mt-3 w-full rounded-xl bg-brand-moss px-4 py-2 text-white hover:opacity-90 transition" data-product-id={product.id}>
+            Add to Cart
+          </button>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  // Client-side TypeScript for this component
+  interface Product {
+    id: string;
+    name: string;
+    price: number;
+  }
+
+  class ProductManager {
+    private cart: Product[] = [];
+
+    constructor() {
+      this.initEventListeners();
+    }
+
+    private initEventListeners(): void {
+      const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+      
+      addToCartButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+          const target = e.target as HTMLButtonElement;
+          const productId = target.dataset.productId;
+          
+          if (productId) {
+            this.addToCart(productId);
+          }
+        });
+      });
+    }
+
+    private addToCart(productId: string): void {
+      const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+      if (!productCard) return;
+
+      // Add visual feedback
+      productCard.classList.add('animate-pulse');
+      setTimeout(() => {
+        productCard.classList.remove('animate-pulse');
+      }, 300);
+
+      console.log(`Added product ${productId} to cart`);
+      
+      // Here you would typically make an API call or update state
+      // this.updateCartCount();
+    }
+
+    getCartItems(): Product[] {
+      return this.cart;
+    }
+  }
+
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    new ProductManager();
+  });
+</script>

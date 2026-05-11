@@ -1,0 +1,148 @@
+---
+// installation.astro - Installation page
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Hardwood Flooring Installation Houston | Jamail Hardwoods"
+  description="Dust-controlled hardwood flooring installation in Houston with subfloor prep, moisture testing, certified crews, clear timelines, and showroom support."
+>
+  <Header />
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-linear-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto px-4 sm:px-6 pt-16 pb-14 grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal">
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight">Professional Hardwood Flooring Installation</h1>
+        <p class="mt-4 text-brand-ink/80 leading-relaxed">
+          Experience a flawless installation process with our certified installers. We use dust-controlled methods, guaranteed timelines, and meticulous attention to detail for a perfect finish every time.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://jamail-hardwoods-leads.vercel.app/booking"
+             class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-5 py-3 text-white shadow-soft hover:opacity-90 transition"
+             target="_blank" rel="nofollow noopener noreferrer">
+            Get Free Quote
+          </a>
+          <a href="#process"
+             class="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition">
+            Our Process
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="/images/Hardwood installing.jpg" 
+             alt="Professional hardwood flooring installation in Houston"
+             class="aspect-[4/3] w-full h-full object-cover rounded-3xl shadow-glass" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Process Section -->
+  <section id="process" class="bg-brand-sand/40 py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="font-heading text-2xl sm:text-3xl">Our Installation Process</h2>
+        <p class="mt-2 text-brand-ink/80 leading-relaxed">We've refined our process to minimize disruption while maximizing quality. Every step is designed for predictable results and your peace of mind.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">01</div>
+          <h3 class="font-semibold mt-2">Site Assessment & Subfloor Prep</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">We start by inspecting your subfloor, checking for levelness and moisture to create the perfect foundation. This step is critical for a long-lasting, quiet floor.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">02</div>
+          <h3 class="font-semibold mt-2">Material Acclimation</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">Your European White Oak is delivered to your home to acclimate to its unique humidity and temperature. This prevents gapping and cupping after installation.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">03</div>
+          <h3 class="font-semibold mt-2">Dust-Controlled Installation</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">Our certified crew installs your new floor with precision, using advanced dust containment systems to keep your home clean and livable throughout the process.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">04</div>
+          <h3 class="font-semibold mt-2">Final Walkthrough & Cleanup</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">We conduct a final walkthrough to ensure your complete satisfaction, clean the job site, and provide you with simple care instructions for your beautiful new floor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="container mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div class="reveal order-last md:order-first">
+      <h2 class="font-heading text-2xl sm:text-3xl">The Jamail Hardwoods Difference</h2>
+      <p class="mt-3 text-brand-ink/80 leading-relaxed">
+        Choosing the right installer is as important as choosing the right wood. Our commitment to quality sets our hardwood flooring installation service apart in Houston.
+      </p>
+      <ul class="mt-4 space-y-3 text-brand-ink/80">
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span><strong>Certified & Insured Team:</strong> Peace of mind knowing your home is in the hands of vetted professionals.</span></li>
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span><strong>Advanced Dust Control:</strong> We use top-tier dust containment systems to protect your air quality and belongings.</span></li>
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span><strong>Predictable Timelines:</strong> We respect your time, providing clear schedules and sticking to them. Most projects are completed in 7-14 days.</span></li>
+        <li class="flex gap-3"><strong class="font-semibold text-brand-moss">✓</strong><span><strong>One Point of Contact:</strong> From quote to final walkthrough, you work with one dedicated team. No runarounds.</span></li>
+      </ul>
+    </div>
+    <div class="reveal order-first md:order-last">
+      <img src="/images/Hardwood Flooring Houston Jamail Hardwoods.jpg" 
+           alt="A craftsman from Jamail Hardwoods inspecting a newly installed European oak floor."
+           class="w-full aspect-[4/3] object-cover rounded-3xl shadow-glass" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="reveal rounded-3xl bg-brand-moss p-6 sm:p-8 md:p-12 text-center text-white shadow-soft">
+      <h2 class="font-heading text-2xl sm:text-3xl">Get a Quote for Your Houston Flooring Installation</h2>
+      <p class="mt-2 mx-auto max-w-2xl opacity-90 leading-relaxed">Ready for a flawless floor? Let's talk about your project. Schedule a free, no-obligation consultation with a flooring specialist today.</p>
+      <div class="mt-6">
+        <a href="https://jamail-hardwoods-leads.vercel.app/booking"
+           class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-brand-coal shadow-soft hover:opacity-90 transition"
+           target="_blank" rel="nofollow noopener noreferrer">
+          Schedule Consultation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HowTo JSON-LD for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Install Hardwood Flooring in Houston",
+    "description": "Our professional process for a flawless hardwood flooring installation in Houston, from subfloor preparation to the final walkthrough.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Site Assessment & Subfloor Prep",
+        "text": "We start by inspecting your subfloor, checking for levelness and moisture to create the perfect foundation. This step is critical for a long-lasting, quiet floor.",
+        "url": "https://jamailfloors.com/installation#process"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Material Acclimation",
+        "text": "Your European White Oak is delivered to your home to acclimate to its unique humidity and temperature. This prevents gapping and cupping after installation.",
+        "url": "https://jamailfloors.com/installation#process"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Dust-Controlled Installation",
+        "text": "Our certified crew installs your new floor with precision, using advanced dust containment systems to keep your home clean and livable throughout the process.",
+        "url": "https://jamailfloors.com/installation#process"
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Final Walkthrough & Cleanup",
+        "text": "We conduct a final walkthrough to ensure your complete satisfaction, clean the job site, and provide you with simple care instructions for your beautiful new floor.",
+        "url": "https://jamailfloors.com/installation#process"
+      }
+    ]
+  })}></script>
+
+  <Footer />
+</Layout>
+
+

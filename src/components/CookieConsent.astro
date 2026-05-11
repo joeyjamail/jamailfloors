@@ -1,0 +1,54 @@
+---
+// CookieConsent.astro - Simple cookie consent banner for US website
+---
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent" class="fixed bottom-0 left-0 right-0 z-[300] hidden">
+  <div class="bg-white border-t border-black/10 shadow-glass">
+    <div class="container mx-auto px-4 py-4 sm:py-5">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <!-- Message -->
+        <div class="flex-1">
+          <p class="text-sm text-brand-ink/90">
+            <strong class="font-semibold">We value your privacy.</strong> 
+            We use cookies to enhance your experience and understand how visitors use our site through Google Analytics and Microsoft Clarity. 
+            By clicking "Accept", you consent to our use of cookies.
+            <a href="/privacy-policy" class="underline hover:text-brand-brass transition">Learn more</a>
+          </p>
+        </div>
+        
+        <!-- Actions -->
+        <div class="flex gap-3 flex-shrink-0">
+          <button 
+            id="cookie-decline" 
+            class="px-4 py-2 text-sm rounded-xl border border-black/10 hover:bg-brand-sand/40 transition">
+            Decline
+          </button>
+          <button 
+            id="cookie-accept" 
+            class="px-5 py-2 text-sm rounded-xl bg-brand-brass text-white shadow-soft hover:opacity-90 transition">
+            Accept Cookies
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #cookie-consent.show {
+    display: block;
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+</style>

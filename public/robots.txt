@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /404
+Disallow: /policy
+Disallow: /privacy-policy
+Disallow: /terms-and-conditions
+
+Sitemap: https://jamailfloors.com/sitemap-index.xml

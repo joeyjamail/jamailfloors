@@ -1,0 +1,109 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/products/desert-clay"
+  to = "/products/siena"
+  status = 301
+
+[[redirects]]
+  from = "/products/oyster-haze"
+  to = "/products/troy"
+  status = 301
+
+[[redirects]]
+  from = "/products/pebble-ridge"
+  to = "/products/arles"
+  status = 301
+
+[[redirects]]
+  from = "/products/slate-shore"
+  to = "/products/toledo"
+  status = 301
+
+[[redirects]]
+  from = "/products/canyon-wheat"
+  to = "/products/epernay"
+  status = 301
+
+[[redirects]]
+  from = "/products/tuscan-grove"
+  to = "/products/cortona"
+  status = 301
+
+[[redirects]]
+  from = "/products/savannah-oak"
+  to = "/products/tarragona"
+  status = 301
+
+[[redirects]]
+  from = "/products/pacific-trail"
+  to = "/products/verona"
+  status = 301
+
+[[redirects]]
+  from = "/products/monterey-beige"
+  to = "/products/marseille"
+  status = 301
+
+[[redirects]]
+  from = "/products/cedar-ash"
+  to = "/products/seville"
+  status = 301
+
+[[redirects]]
+  from = "/products/sierra-cloud"
+  to = "/products/montpellier"
+  status = 301
+
+[[redirects]]
+  from = "/products/harbor-mist"
+  to = "/products/perpignan"
+  status = 301
+
+[[redirects]]
+  from = "/products/heritage-oak"
+  to = "/products/saint-tropez"
+  status = 301
+
+[[redirects]]
+  from = "/products/meadow-bronze"
+  to = "/products/portofino"
+  status = 301
+
+[[redirects]]
+  from = "/products/baltic-linen"
+  to = "/products/mallorca"
+  status = 301
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://www.clarity.ms https://*.clarity.ms https://xzmkcvztboyjdgxjofft.supabase.co; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.clarity.ms https://xzmkcvztboyjdgxjofft.supabase.co; frame-src 'self' https://xzmkcvztboyjdgxjofft.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'"
+
+# Cache static assets
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

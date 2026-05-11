@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout
+  title="Page Not Found | Jamail Hardwoods"
+  description="The page you requested could not be found. Explore Jamail Hardwoods flooring collections, services, or contact our Houston showroom."
+>
+  <Header />
+  <main class="container mx-auto px-4 py-20 text-center">
+    <p class="uppercase tracking-wide text-xs text-brand-ink/60">404</p>
+    <h1 class="mt-3 font-heading text-4xl md:text-5xl">Page Not Found</h1>
+    <p class="mx-auto mt-4 max-w-2xl text-brand-ink/75">
+      This page may have moved. You can return to our hardwood flooring collections, installation services, or Houston showroom contact page.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-3">
+      <a href="/products/" class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-6 py-3 text-white shadow-soft hover:opacity-90 transition">
+        View Flooring Collections
+      </a>
+      <a href="/contact/" class="inline-flex items-center justify-center rounded-2xl bg-brand-sand px-6 py-3 text-brand-coal shadow-soft hover:bg-white transition">
+        Contact Showroom
+      </a>
+    </div>
+  </main>
+  <Footer />
+</Layout>
