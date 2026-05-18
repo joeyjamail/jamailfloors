@@ -1,0 +1,74 @@
+---
+// blog/index.astro - Blog landing page
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const posts = [
+  {
+    slug: 'hardwood-flooring-cost-houston',
+    title: 'How Much Does Hardwood Flooring Cost in Houston? (2026 Guide)',
+    excerpt: "Real installed costs for hardwood flooring in Houston in 2026. Breaks down material, labor, demo, subfloor prep, and what drives the final number — honest ranges from a local installer.",
+    image: '/images/Hardwood Flooring Houston Jamail Hardwoods.jpg',
+    category: 'Cost & Budget',
+    readTime: '9 min read',
+    date: 'May 2026'
+  },
+  {
+    slug: 'hardwood-installation-timeline-houston',
+    title: 'How Long Does Hardwood Floor Installation Take in Houston?',
+    excerpt: 'Real day-by-day timelines for hardwood flooring installation in Houston homes. How long demo, prep, and install actually take — plus what slows projects down.',
+    image: '/images/Hardwood installing.jpg',
+    category: 'Installation',
+    readTime: '8 min read',
+    date: 'May 2026'
+  },
+  {
+    slug: 'european-white-oak-vs-american-white-oak',
+    title: 'European White Oak vs American White Oak: Which Is Better for Houston Homes?',
+    excerpt: "European and American white oak look similar but install and age differently in Houston. A practical comparison from a local installer — grain, hardness, finish, and cost.",
+    image: '/images/Products/harbor-cloud/harbor-cloud-european-oak-hardwood-floor.jpg',
+    category: 'Materials',
+    readTime: '7 min read',
+    date: 'May 2026'
+  }
+];
+---
+
+<Layout
+  title="Blog — Hardwood Flooring Guides for Houston Homeowners | Jamail Hardwoods"
+  description="Practical guides from Houston's European white oak specialists — cost breakdowns, install timelines, material comparisons, and care tips."
+>
+  <Header />
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-linear-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto px-4 sm:px-6 pt-16 pb-10 text-center max-w-3xl">
+      <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Blog</p>
+      <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight">Houston Hardwood Flooring Guides</h1>
+      <p class="mt-4 text-brand-ink/80 leading-relaxed">No-fluff guides for homeowners considering hardwood floors. Honest cost ranges, real timelines, and the material questions worth asking — written by a Houston installer, not a marketer.</p>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 pb-20">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map(post => (
+        <a href={`/blog/${post.slug}`} class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src={post.image} alt={post.title} class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-6">
+            <div class="flex items-center gap-3 text-xs text-brand-ink/60">
+              <span class="font-semibold text-brand-brass uppercase tracking-wider">{post.category}</span>
+              <span class="opacity-50">·</span>
+              <span>{post.readTime}</span>
+            </div>
+            <h2 class="font-heading text-xl text-brand-coal mt-3 leading-snug group-hover:text-brand-brass transition-colors">{post.title}</h2>
+            <p class="mt-2 text-sm text-brand-ink/70 line-clamp-3">{post.excerpt}</p>
+            <span class="inline-block mt-4 text-sm font-semibold text-brand-brass group-hover:underline">Read article →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
