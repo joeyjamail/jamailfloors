@@ -1,0 +1,198 @@
+---
+// tanglewood.astro - Hardwood Flooring in Tanglewood, Houston
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const BOOKING_URL = 'https://jamail-hardwoods-leads.vercel.app/booking';
+---
+
+<Layout
+  title="Hardwood Flooring in Tanglewood, Houston | Jamail Hardwoods"
+  description="European white oak hardwood flooring for Tanglewood homes. Local Houston installation specialists, free in-home consultation, 4.9★ Google rating."
+>
+  <Header />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jamail Hardwoods — Serving Tanglewood",
+    "url": "https://jamailfloors.com/houston/tanglewood",
+    "telephone": "+1-832-930-5936",
+    "address": { "@type": "PostalAddress", "streetAddress": "2643 Colquitt St", "addressLocality": "Houston", "addressRegion": "TX", "postalCode": "77098", "addressCountry": "US" },
+    "areaServed": { "@type": "Place", "name": "Tanglewood, Houston, TX" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "100" }
+  })}></script>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-linear-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto px-4 sm:px-6 pt-16 pb-14 grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal">
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Inner Loop · 77056 / 77057</p>
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight">Hardwood Flooring in Tanglewood</h1>
+        <p class="mt-4 text-brand-ink/80 leading-relaxed">
+          European white oak floors for Tanglewood homes — the leafy, established neighborhood west of the Galleria. Quiet streets, classic homes, premium installation by a team 8 minutes away on Colquitt Street.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href={BOOKING_URL}
+             class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-5 py-3 text-white shadow-soft hover:opacity-90 transition"
+             target="_blank" rel="nofollow noopener noreferrer">
+            Book Free Consultation
+          </a>
+          <a href="/contact"
+             class="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition">
+            Order Free Samples
+          </a>
+        </div>
+        <div class="mt-8 grid grid-cols-3 gap-6 max-w-md">
+          <div>
+            <div class="font-heading text-2xl text-brand-coal">40+</div>
+            <div class="text-xs text-brand-ink/70 mt-1">Tanglewood installs</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl text-brand-coal">8 min</div>
+            <div class="text-xs text-brand-ink/70 mt-1">From showroom</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl text-brand-coal">4.9★</div>
+            <div class="text-xs text-brand-ink/70 mt-1">Google rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="/images/Hardwood Flooring Houston Jamail Hardwoods.jpg"
+             alt="European white oak hardwood floor installed in a Tanglewood Houston home"
+             class="aspect-[5/4] w-full h-full object-cover rounded-3xl shadow-glass" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div class="reveal">
+      <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Why Tanglewood chooses Jamail</p>
+      <h2 class="font-heading text-2xl sm:text-3xl">Built for Tanglewood's classic homes</h2>
+      <p class="mt-3 text-brand-ink/80 leading-relaxed">
+        Tanglewood is one of Houston's most coveted established neighborhoods — large lots, mature trees, mid-century and traditional homes thoughtfully maintained over generations. The Bush family lived here. Homeowners tend to renovate carefully, keeping period character while updating systems and finishes. Floors matter here.
+      </p>
+      <p class="mt-4 text-brand-ink/80 leading-relaxed">
+        40+ Tanglewood installs since 2015. Most of our Tanglewood work comes through interior designer referrals, since many of Houston's top residential designers specify our floors on Tanglewood projects. We're known here — and we deliver.
+      </p>
+    </div>
+    <div class="reveal">
+      <img src="/images/Hardwood installing.jpg"
+           alt="Recent hardwood install in Tanglewood"
+           class="aspect-[4/3] w-full h-full object-cover rounded-3xl shadow-glass" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <section class="bg-brand-sand/40 py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">What working with us looks like</p>
+        <h2 class="font-heading text-2xl sm:text-3xl">How we run a Tanglewood project</h2>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">01</div>
+          <h3 class="font-semibold mt-2">Designer collaboration</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">Most Tanglewood projects flow through an interior designer. We work seamlessly with them — bringing physical samples to the design studio, executing exactly to spec, handling every transition piece and trim detail with care.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">02</div>
+          <h3 class="font-semibold mt-2">Quiet, neighbor-aware installs</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">Tanglewood streets are quiet, and HOA-equivalent neighborhood norms matter. We schedule deliveries discreetly, park crew vehicles considerately, and never run loud saws before 9am.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">03</div>
+          <h3 class="font-semibold mt-2">Period-character preservation</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">Original baseboards, crown moldings, and trim are protected meticulously during install. Where possible we work around — not over or under — original architectural details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="reveal rounded-3xl bg-brand-ivory p-8 md:p-12 max-w-3xl mx-auto">
+      <div class="text-brand-brass mb-4">★★★★★</div>
+      <blockquote class="font-heading text-xl sm:text-2xl text-brand-coal leading-snug italic">
+        "Our designer specified Amber Canyon for our Tanglewood renovation. The Jamail team brought samples to her studio, then to our home, then handled the install over six weeks alongside three other trades. Not a single problem, beautiful finish, neighbors didn't even notice the truck."
+      </blockquote>
+      <cite class="block mt-5 not-italic text-sm text-brand-ink/70">— Hassan M., Tanglewood (77056)</cite>
+    </div>
+  </section>
+
+  <section class="bg-brand-sand/40 py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Floors that suit Tanglewood</p>
+        <h2 class="font-heading text-2xl sm:text-3xl">Our European White Oak — installed locally</h2>
+        <p class="mt-3 text-brand-ink/80 leading-relaxed">Order a free sample box and we'll ship full-size planks to your Tanglewood address in 5–7 days.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <a href="/products/harbor-cloud" class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src="/images/Products/harbor-cloud/harbor-cloud-european-oak-hardwood-floor.jpg" alt="Harbor Cloud European white oak" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-5">
+            <h3 class="font-heading text-xl text-brand-coal">Harbor Cloud</h3>
+            <p class="mt-1 text-sm text-brand-ink/70">Light and airy. Brightens any space.</p>
+            <span class="inline-block mt-3 text-sm font-semibold text-brand-brass group-hover:underline">View Harbor Cloud →</span>
+          </div>
+        </a>
+        <a href="/products/amber-canyon" class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src="/images/Products/amber-canyon/amber-canyon-european-oak-hardwood-floor.jpg" alt="Amber Canyon European white oak" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-5">
+            <h3 class="font-heading text-xl text-brand-coal">Amber Canyon</h3>
+            <p class="mt-1 text-sm text-brand-ink/70">Warm and characterful. Hides daily wear beautifully.</p>
+            <span class="inline-block mt-3 text-sm font-semibold text-brand-brass group-hover:underline">View Amber Canyon →</span>
+          </div>
+        </a>
+        <a href="/products/sierra-driftwood" class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src="/images/Products/sierra-driftwood/sierra-driftwood-european-oak-hardwood-floor.jpg" alt="Sierra Driftwood European white oak" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-5">
+            <h3 class="font-heading text-xl text-brand-coal">Sierra Driftwood</h3>
+            <p class="mt-1 text-sm text-brand-ink/70">Weathered gray-brown. Most-installed across Houston.</p>
+            <span class="inline-block mt-3 text-sm font-semibold text-brand-brass group-hover:underline">View Sierra Driftwood →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Areas we serve</p>
+      <h2 class="font-heading text-2xl sm:text-3xl">Tanglewood and the Galleria area</h2>
+      <p class="mt-3 text-brand-ink/80 leading-relaxed">We're 8 minutes from the Galleria. We routinely serve:</p>
+    </div>
+    <ul class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 max-w-2xl text-brand-ink/80">
+      <li>Tanglewood (77056 / 77057)</li>
+      <li>Briargrove (77057)</li>
+      <li>Galleria-adjacent</li>
+      <li>Memorial Park edge</li>
+      <li>Greenway / Upper Kirby</li>
+      <li>Lamar River Oaks</li>
+      <li>Afton Oaks</li>
+      <li>River Oaks adjacent</li>
+    </ul>
+    <p class="mt-6 text-brand-ink/80 max-w-2xl">We cover all of inner-loop west — Tanglewood, Briargrove, Afton Oaks, Galleria, River Oaks edge.</p>
+  </section>
+
+  <section class="bg-brand-ink text-white py-16">
+    <div class="container mx-auto px-4 sm:px-6 text-center max-w-2xl">
+      <h2 class="font-heading text-2xl sm:text-3xl">Let's look at your floors</h2>
+      <p class="mt-3 text-white/80 leading-relaxed">Free in-home consultation in Tanglewood. We'll come to you, work with your designer if you have one, and email a written estimate within 48 hours.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href={BOOKING_URL}
+           class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-6 py-3 text-white shadow-soft hover:opacity-90 transition"
+           target="_blank" rel="nofollow noopener noreferrer">
+          Book Free Consultation
+        </a>
+        <a href="tel:+18329305936"
+           class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition">
+          Call (832) 930-5936
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

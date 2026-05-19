@@ -1,0 +1,198 @@
+---
+// bellaire.astro - Hardwood Flooring in Bellaire, Houston
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const BOOKING_URL = 'https://jamail-hardwoods-leads.vercel.app/booking';
+---
+
+<Layout
+  title="Hardwood Flooring in Bellaire, Houston | Jamail Hardwoods"
+  description="European white oak hardwood flooring for Bellaire homes. Local Houston installation specialists, free in-home consultation, 4.9★ Google rating."
+>
+  <Header />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Jamail Hardwoods — Serving Bellaire",
+    "url": "https://jamailfloors.com/houston/bellaire",
+    "telephone": "+1-832-930-5936",
+    "address": { "@type": "PostalAddress", "streetAddress": "2643 Colquitt St", "addressLocality": "Houston", "addressRegion": "TX", "postalCode": "77098", "addressCountry": "US" },
+    "areaServed": { "@type": "Place", "name": "Bellaire, TX" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "100" }
+  })}></script>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-linear-to-b from-brand-sand/60 via-brand-ivory to-white pointer-events-none"></div>
+    <div class="container mx-auto px-4 sm:px-6 pt-16 pb-14 grid md:grid-cols-2 gap-10 items-center">
+      <div class="reveal">
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Inner Loop · 77401</p>
+        <h1 class="font-heading text-3xl sm:text-4xl md:text-5xl leading-tight">Hardwood Flooring in Bellaire</h1>
+        <p class="mt-4 text-brand-ink/80 leading-relaxed">
+          European white oak floors for Bellaire homes — mid-century originals, modern rebuilds, and the family-friendly neighborhoods between West U and the Galleria. Installed by a Houston team based on Colquitt Street, 12 minutes away.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href={BOOKING_URL}
+             class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-5 py-3 text-white shadow-soft hover:opacity-90 transition"
+             target="_blank" rel="nofollow noopener noreferrer">
+            Book Free Consultation
+          </a>
+          <a href="/contact"
+             class="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition">
+            Order Free Samples
+          </a>
+        </div>
+        <div class="mt-8 grid grid-cols-3 gap-6 max-w-md">
+          <div>
+            <div class="font-heading text-2xl text-brand-coal">50+</div>
+            <div class="text-xs text-brand-ink/70 mt-1">Bellaire installs</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl text-brand-coal">12 min</div>
+            <div class="text-xs text-brand-ink/70 mt-1">From showroom</div>
+          </div>
+          <div>
+            <div class="font-heading text-2xl text-brand-coal">4.9★</div>
+            <div class="text-xs text-brand-ink/70 mt-1">Google rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="/images/Hardwood Flooring Houston Jamail Hardwoods.jpg"
+             alt="European white oak hardwood floor installed in a Bellaire Houston home"
+             class="aspect-[5/4] w-full h-full object-cover rounded-3xl shadow-glass" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div class="reveal">
+      <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Why Bellaire chooses Jamail</p>
+      <h2 class="font-heading text-2xl sm:text-3xl">Built for Bellaire's mix of old and new</h2>
+      <p class="mt-3 text-brand-ink/80 leading-relaxed">
+        Bellaire is unusual — a small city inside Houston with its own character. You'll find 1940s–60s ranch houses next to 2020s modern rebuilds, all on quiet residential streets. Both kinds of homes get hardwood floors, but they're very different projects: a 1955 ranch renovation might need slab leveling and tile demo, while a new build is a clean slab install.
+      </p>
+      <p class="mt-4 text-brand-ink/80 leading-relaxed">
+        We've installed in 50+ Bellaire homes — equally split between renovations and new builds. Our crews handle both project types in stride, and we coordinate well with the Bellaire-specific custom builders and renovators.
+      </p>
+    </div>
+    <div class="reveal">
+      <img src="/images/Hardwood installing.jpg"
+           alt="Recent hardwood install in Bellaire"
+           class="aspect-[4/3] w-full h-full object-cover rounded-3xl shadow-glass" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <section class="bg-brand-sand/40 py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">What working with us looks like</p>
+        <h2 class="font-heading text-2xl sm:text-3xl">How we run a Bellaire project</h2>
+      </div>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">01</div>
+          <h3 class="font-semibold mt-2">Mid-century renovation expertise</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">1950s and 60s Bellaire homes often have settled slabs, old asphalt tile underlayers, and original baseboards we work hard to preserve. We've done dozens of these — slab grinding, moisture mitigation, careful demo around historic trim.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">02</div>
+          <h3 class="font-semibold mt-2">Modern new-build coordination</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">For Bellaire's modern rebuilds, we coordinate directly with the GC and architect. Wide-plank European oak fits the modern aesthetic beautifully; we handle the long sightlines and clean lines those builds require.</p>
+        </div>
+        <div class="reveal rounded-2xl bg-white p-6 shadow-soft">
+          <div class="font-heading text-brand-brass text-2xl">03</div>
+          <h3 class="font-semibold mt-2">Local trade relationships</h3>
+          <p class="mt-1 text-sm text-brand-ink/70">We work with many of the same builders, designers, and trades on repeat Bellaire projects. Smooth scheduling, easy coordination, problems caught early.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="reveal rounded-3xl bg-brand-ivory p-8 md:p-12 max-w-3xl mx-auto">
+      <div class="text-brand-brass mb-4">★★★★★</div>
+      <blockquote class="font-heading text-xl sm:text-2xl text-brand-coal leading-snug italic">
+        "We bought a 1962 ranch in Bellaire and gutted it down to the studs. The Jamail team handled all the floors — Harbor Cloud across 2,200 sq ft. They worked with our architect on plank direction and seam placement, prepped the slab carefully, and the install is flawless. The house finally feels finished."
+      </blockquote>
+      <cite class="block mt-5 not-italic text-sm text-brand-ink/70">— Aaron K., Bellaire (77401)</cite>
+    </div>
+  </section>
+
+  <section class="bg-brand-sand/40 py-16">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="max-w-3xl">
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Floors that suit Bellaire</p>
+        <h2 class="font-heading text-2xl sm:text-3xl">Our European White Oak — installed locally</h2>
+        <p class="mt-3 text-brand-ink/80 leading-relaxed">Order a free sample box and we'll ship full-size planks to your Bellaire address in 5–7 days.</p>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <a href="/products/harbor-cloud" class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src="/images/Products/harbor-cloud/harbor-cloud-european-oak-hardwood-floor.jpg" alt="Harbor Cloud European white oak" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-5">
+            <h3 class="font-heading text-xl text-brand-coal">Harbor Cloud</h3>
+            <p class="mt-1 text-sm text-brand-ink/70">Light and airy. Brightens any space.</p>
+            <span class="inline-block mt-3 text-sm font-semibold text-brand-brass group-hover:underline">View Harbor Cloud →</span>
+          </div>
+        </a>
+        <a href="/products/amber-canyon" class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src="/images/Products/amber-canyon/amber-canyon-european-oak-hardwood-floor.jpg" alt="Amber Canyon European white oak" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-5">
+            <h3 class="font-heading text-xl text-brand-coal">Amber Canyon</h3>
+            <p class="mt-1 text-sm text-brand-ink/70">Warm and characterful. Hides daily wear beautifully.</p>
+            <span class="inline-block mt-3 text-sm font-semibold text-brand-brass group-hover:underline">View Amber Canyon →</span>
+          </div>
+        </a>
+        <a href="/products/sierra-driftwood" class="reveal group rounded-2xl bg-white overflow-hidden shadow-soft hover:shadow-glass transition">
+          <img src="/images/Products/sierra-driftwood/sierra-driftwood-european-oak-hardwood-floor.jpg" alt="Sierra Driftwood European white oak" class="aspect-[4/3] w-full object-cover" loading="lazy" decoding="async">
+          <div class="p-5">
+            <h3 class="font-heading text-xl text-brand-coal">Sierra Driftwood</h3>
+            <p class="mt-1 text-sm text-brand-ink/70">Weathered gray-brown. Most-installed across Houston.</p>
+            <span class="inline-block mt-3 text-sm font-semibold text-brand-brass group-hover:underline">View Sierra Driftwood →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 sm:px-6 py-16">
+    <div class="max-w-3xl">
+      <p class="text-xs uppercase tracking-[0.2em] text-brand-brass font-semibold mb-3">Areas we serve</p>
+      <h2 class="font-heading text-2xl sm:text-3xl">Bellaire and the inner-loop south</h2>
+      <p class="mt-3 text-brand-ink/80 leading-relaxed">We're 12 minutes from Bellaire City Hall. We routinely serve:</p>
+    </div>
+    <ul class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-2 max-w-2xl text-brand-ink/80">
+      <li>Bellaire (77401)</li>
+      <li>Bellaire South / Old Bellaire</li>
+      <li>Bellaire Boulevard area</li>
+      <li>Bissonnet / Mulberry corridor</li>
+      <li>Braeswood (77401)</li>
+      <li>Linkwood adjacent</li>
+      <li>Meyerland (77096)</li>
+      <li>West University Place (77005)</li>
+    </ul>
+    <p class="mt-6 text-brand-ink/80 max-w-2xl">Adjacent neighborhoods covered: Meyerland, Maplewood, West U, Southside Place, Braeswood Place.</p>
+  </section>
+
+  <section class="bg-brand-ink text-white py-16">
+    <div class="container mx-auto px-4 sm:px-6 text-center max-w-2xl">
+      <h2 class="font-heading text-2xl sm:text-3xl">Let's look at your floors</h2>
+      <p class="mt-3 text-white/80 leading-relaxed">Free in-home consultation in Bellaire. We come measure, look at your subfloor — including older slabs and renovation prep — and email a written estimate within 48 hours.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href={BOOKING_URL}
+           class="inline-flex items-center justify-center rounded-2xl bg-brand-brass px-6 py-3 text-white shadow-soft hover:opacity-90 transition"
+           target="_blank" rel="nofollow noopener noreferrer">
+          Book Free Consultation
+        </a>
+        <a href="tel:+18329305936"
+           class="inline-flex items-center justify-center rounded-2xl bg-white px-6 py-3 text-brand-ink shadow-soft hover:bg-brand-sand transition">
+          Call (832) 930-5936
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
